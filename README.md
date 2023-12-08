@@ -31,18 +31,17 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ## Navigate to the project directory:
 
-``` bash
+```bash
 cd react-weather-app
-
+```
 
 ## Install dependencies:
-`` 
-bash
+``` bash
 npm install
 or
-``` bash
-Copy code
 yarn install
+
+```
 
 ## Usage
 Start the development server:
@@ -50,9 +49,6 @@ Start the development server:
 ``` bash
 npm start
 or
-
-``` bash
-Copy code
 yarn start
 Open your browser and navigate to http://localhost:3000 to view the app.
 ```
