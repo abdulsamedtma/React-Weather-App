@@ -1,6 +1,7 @@
 # React Weather App
 
-![Weather App Screenshot](screenshot.png)
+![Weather App Screenshot](src/components/Assets/Screenshot.jpeg)
+
 
 ## Overview
 
