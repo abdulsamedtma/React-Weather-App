@@ -2,6 +2,8 @@
 
 ![Weather App Screenshot](src/components/Assets/Screenshot.jpeg)
 
+[Click to view deployed site](https://stupendous-salmiakki-012aeb.netlify.app//) 
+
 
 ## Overview
 
