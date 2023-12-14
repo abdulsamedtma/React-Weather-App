@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './WeatherApp.css';
+import Swal from 'sweetalert2';
 import searchIcon from '../Assets/search.png';
 import clearIcon from '../Assets/clear.png';
 import cloudIcon from '../Assets/cloud.png';
@@ -8,6 +9,7 @@ import snowIcon from '../Assets/snow.png';
 import windIcon from '../Assets/wind.png';
 import humidityIcon from '../Assets/humidity.png';
 import drizzleIcon from '../Assets/drizzle.png';
+import withReactContent from 'sweetalert2-react-content';
 
 const WeatherApp = () => {
   // State for weather icon
@@ -16,14 +18,21 @@ const WeatherApp = () => {
   // API key for OpenWeatherMap API
   const apiKey = "9e84d6830a71ef226c9f876d4a60ce6e";
 
+  // Function to handle SweetAlert2 popup
+  const MySwal  = withReactContent(Swal);
+
   // Function to handle search and fetch weather data
   const search = async () => {
-    // Retrieving the input element
+  // Retrieving the input element
     const cityInput = document.getElementsByClassName("cityInput")[0];
-
     // Checking if the city input is empty
     if (cityInput.value === "") {
-      alert('Please enter a city name');
+        // Displaying SweetAlert2 popup
+      MySwal.fire ({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Please enter a city name!',
+      })
       return;
     }
 
